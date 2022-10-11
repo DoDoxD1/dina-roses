@@ -1,31 +1,174 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Profile</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-    <div class="topbar"></div>
-    
+    <div class="topbar">
+        <span class="logo">Logo</span>
+        <div class="menu">
+            <ul>
+                <li><a href="#">Profile</a></li>
+                <li><a href="#">Education</a></li>
+            </ul>
+        </div>
+        <div class="topbar-right">
+            <div class="searchbar">
+                <form action="">
+                    <button type="submit"><img src="images/search.png" alt="" height="15"></button>
+                    <input type="text" name="" id="" placeholder="Search">
+
+                </form>
+            </div>
+            <img src="images/cart.png" alt="" height="30">
+            <img src="images/notificaion.png" alt="" height="30">
+            <img src="images/avatar.jpg" alt="" class="avatar" height="30">
+        </div>
+    </div>
+
     <div class="container">
 
         <div class="main-content">
             <div class="intro">
-
+                <div class="name">
+                    <div class="left">
+                        <img src="images/avatar.jpg" alt="" height="100" class="avatar">
+                        <div>
+                            <h3>Diana Ross</h3>
+                            Professional title
+                            <div class="place">
+                                <img src="images/location.png" alt="" height="20" class="location">
+                                New York - 09:-30AM
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <div class="top-rated">
+                            <img src="images/top.png" alt="" height="20">
+                            Top rated
+                        </div>
+                        Top 5% in Android Dev
+                        Top 20% in People Mgmt
+                    </div>
+                </div>
+                <h3 class="head-text">
+                    Overview
+                </h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, veritatis? Voluptates facilis aliquam
+                    cumque consequatur numquam, officia totam nemo dolore ipsa explicabo ut fuga suscipit ea recusandae,
+                    amet repellat quos! Ipsum, tempore.</p>
+                <div class="exps">
+                    <div class="exp-div">
+                        6Y 8M
+                        <p>Total Experience</p>
+                    </div>
+                    <div class="exp-div">
+                        10.3 LPA
+                        <p>Current CTC</p>
+                    </div>
+                    <div class="exp-div">
+                        Immidiae Joiner
+                        <p>Search Level</p>
+                    </div>
+                    <div class="exp-div">
+                        NA
+                        <p>Noice Period</p>
+                    </div>
+                </div>
             </div>
+
             <div class="work">
-                Work History
+                <h3 class="head-text heading"> Work History</h3>
+                <div class="job-head">
+                    <h3 class="head-text">Job 1 <img src="images/calendar.png" alt="" height="18"></h3> March
+                    2021-Present
+                </div>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste consequuntur iusto vel, dolorum
+                    temporibus, assumenda consequatur rerum architecto voluptatem animi, adipisci aliquam sit. Ipsa,
+                    quaerat?</p>
+                <div class="divider"></div>
+                <div class="job-head">
+                    <h3 class="head-text">Job 2 <img src="images/calendar.png" alt="" height="18"></h3> March
+                    2021-Present
+                </div>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste consequuntur iusto vel, dolorum
+                    temporibus, assumenda consequatur rerum architecto voluptatem animi, adipisci aliquam sit. Ipsa,
+                    quaerat?</p>
             </div>
             <div class="education">
-                Education
+                <h3 class="head-text heading">Education</h3>
+                <div class="job-head">
+                    <h3 class="head-text">Course 1 <img src="images/calendar.png" alt="" height="18"></h3> March
+                    2021-Present
+                </div>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste consequuntur iusto vel, dolorum
+                    temporibus, assumenda consequatur rerum architecto voluptatem animi, adipisci aliquam sit. Ipsa,
+                    quaerat?</p>
+                <div class="divider"></div>
+                <div class="job-head">
+                    <h3 class="head-text">Course 2 <img src="images/calendar.png" alt="" height="18"></h3> March
+                    2021-Present
+                </div>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste consequuntur iusto vel, dolorum
+                    temporibus, assumenda consequatur rerum architecto voluptatem animi, adipisci aliquam sit. Ipsa,
+                    quaerat?</p>
             </div>
         </div>
         <div class="sidebar">
-            Profile Activity
+            <div class="activity">
+                <h3>Profile Activity</h3>
+                High
+            </div>
+            <button class="button">
+                Messages
+            </button>
+            99999995 <br>
+            xyz@gmail.com
+            <button class="button">
+                Recent Visitors
+            </button>
+            <h3 class="head-text heading">
+                Total Views in last 30 days
+            </h3>
+            75+
+            <br><br><br>
+            <h3 class="head-text heading">
+                Certificates
+            </h3>
+            Lorem ipsum dolor sit amet consectetur.
+            <br><br><br>
+            <h3 class="head-text heading">
+                Linkedin
+            </h3>
+            www.linkedin.com <br>
+            <button class="button2" onclick="copylink()">Copy Link</button>
+            <div class="sidebar-botom">
+                <img src="images/image.png" alt="" >
+                <h3 class="head-tex">
+                    Lorem, ipsum dolor.
+                </h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <button class="button margin">
+                    Get Started
+                </button>
+            </div>
         </div>
+
     </div>
 
 </body>
+
+<script>
+    function copylink(){
+        navigator.clipboard.writeText("www.linkedin.com ");
+        window.alert("Link Copied");
+    }
+</script>
+
 </html>
