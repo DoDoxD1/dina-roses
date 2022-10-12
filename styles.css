@@ -216,10 +216,39 @@ dark text: #353a46*/
     width: 100%;
 }
 #menu-button{
-    display: none;
+    display: none !important;
 }
 .navigation-mob{
     display: none;
+}
+
+@media only screen and (max-width: 900px){
+    .main-content{
+        width: 66%;
+    }
+    .sidebar{
+        width: 26%;
+    }
+    .menu{
+        width: 60%;
+        margin-left: 2rem;
+    }
+    .topbar-right{
+        width: 60%;
+    }
+    .searchbar{
+        width: 50%;
+        height: 2rem;
+    }
+    .searchbar form{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .searchbar form button{
+        margin-top: .2rem;
+        margin-right: .5rem;
+    }
 }
 
 @media only screen and (max-width: 600px) {
