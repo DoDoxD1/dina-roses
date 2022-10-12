@@ -10,6 +10,16 @@
 </head>
 
 <body>
+
+    <div class="navigation-mob" id="navigation-mob">
+        <span>Diana Ross</span>
+        <img src="images/close.png" alt="" id="close-nav" height="30">
+        <ul>
+            <li><a href="#"> Profile</a></li>
+            <li><a href="#"> Education</a></li>
+        </ul>
+    </div>
+
     <div class="topbar">
         <span class="logo">Logo</span>
         <div class="menu">
@@ -30,6 +40,7 @@
             <img src="images/notificaion.png" alt="" height="30">
             <img src="images/avatar.jpg" alt="" class="avatar" height="30">
         </div>
+        <img src="images/menu.png" alt="" height="30" id="menu-button">
     </div>
 
     <div class="container">
@@ -53,7 +64,7 @@
                             <img src="images/top.png" alt="" height="20">
                             Top rated
                         </div>
-                        Top 5% in Android Dev
+                        Top 5% in Android Dev<br>
                         Top 20% in People Mgmt
                     </div>
                 </div>
@@ -169,6 +180,17 @@
         navigator.clipboard.writeText("www.linkedin.com ");
         window.alert("Link Copied");
     }
+
+    document.getElementById("menu-button").onclick = function(){
+        document.getElementById("navigation-mob").style.display = "block";
+        document.getElementById("menu-button").style.display = "none";
+    }
+
+    document.getElementById("close-nav").onclick = function(){
+        document.getElementById("navigation-mob").style.display = "none";
+        document.getElementById("menu-button").style.display = "block";
+    }
+
 </script>
 
 </html>

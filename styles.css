@@ -215,10 +215,114 @@ dark text: #353a46*/
 .sidebar-botom img{
     width: 100%;
 }
+#menu-button{
+    display: none;
+}
+.navigation-mob{
+    display: none;
+}
 
 @media only screen and (max-width: 600px) {
-    .sidebar{
+    .container{
+        flex-direction: column;
+    }
+    .sidebar, .main-content{
+        width: 90%;
+        text-align: center;
+    }
+    .main-content{
+        width: 90%;
+        margin: 0rem 1rem;
+    }
+    .topbar{
+        justify-content: space-between;
+    }
+    #menu-button{
+        display: block;
+        margin-right: 1rem;
+    }
+    .topbar-right{
         display: none;
     }
-    
+    .menu{
+        display: none;
+    }
+    .name{
+        flex-direction: column;
+    }
+    .left{
+        width: 100%;
+        flex-direction: column;
+    }
+    .right{
+        margin-top: 1rem;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    .exps{
+        flex-direction: column;
+    }
+    .exp-div{
+        margin-bottom: 2rem;
+    }
+    .exp-div p{
+        margin: 0;
+    }
+
+    .navigation-mob{
+        display: none;
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        z-index: 8;
+        padding: 2rem 0rem;
+        background-color: #c3c3c3bd ;
+    }
+    .navigation-mob span{
+        margin-left: 1rem;
+        font-size: 1.5rem;
+        font-weight: 500;
+        color: white;
+        padding: .5rem;
+        border-radius: .2rem;
+        background-color: #7930d8;
+    }
+    .navigation-mob h3{
+        padding-left: 1rem;
+        padding-top: 1rem;
+        font-weight: 400;
+        font-size: 1rem;
+    }
+    .navigation-mob ul{
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        top: 30%;
+        left: 25%;
+    }
+    .navigation-mob ul li{
+        list-style: none;
+        width: 5rem;
+        text-align: center;
+        border-bottom: #f4f4f5 .8px solid;
+        padding: 1rem;
+        background-color: white;
+        margin-top: 1rem;
+        border-radius: .5rem;
+    }
+    .navigation-mob ul li a{
+        text-decoration: none;
+    }
+    .navigation-mob ul li:hover a{
+        color: #7930d8;
+    }
+    #close-nav{
+        position: fixed;
+        top: 1.8rem;
+        right: 1.5rem;
+    }
   }
