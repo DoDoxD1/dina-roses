@@ -354,4 +354,7 @@ dark text: #353a46*/
         top: 1.8rem;
         right: 1.5rem;
     }
+    #menu-button{
+        display: block !important;
+    }
   }
