@@ -129,3 +129,35 @@ dark text: #353a46*/
 .sidebar-botom img{
     width: 100%;
 }
+.web-off{
+    display: none !important;
+}
+@media only screen and (max-width: 900px){
+    .mob-off{
+        display: none !important;
+    }
+    .web-off{
+        display: flex !important;
+    }
+}
+@media only screen and (max-width: 600px){
+    .container{
+        flex-direction: column;
+        margin-top: .1rem;
+    }
+    .name{
+        flex-direction: column;
+    }
+    .right, .left, .main, .sidebar{
+        width: 100%;
+    }
+    .right{
+        margin-top: 2rem;
+    }
+    .web-off{
+        display: flex !important;
+    }
+    .mob-off{
+        display: none !important;
+    }
+}
