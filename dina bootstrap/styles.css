@@ -1,0 +1,131 @@
+/* main colour : #7930d8 
+light grey: #656c7a
+dark text: #353a46*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', 'Noto Sans', sans-serif;
+    line-height: 1.5rem;
+}
+
+.logo{
+    margin-left: 1rem;
+    font-weight: 700;
+    font-size: 1.5rem !important;
+    color: #7930d8 !important;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+
+.main{
+    width: 69%;
+}
+
+.sidebar{
+    width: 29%;
+}
+
+.job-head{
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: .5rem;
+}
+.job-head img{
+    margin-left: .5rem;
+}
+.job-head h3{
+    font-size: 1rem;
+    margin-right: .5rem;
+    font-weight: 600;
+}
+
+.divider{
+    margin: auto;
+    margin-top: 2rem;
+    background-color: #c0c0c0;
+    height: 1px;
+}
+
+.name{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+.name h3{
+    color: #7930d8;
+    font-weight: 600;
+}
+.left{
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+.right{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+}
+.top-rated{
+    display: flex;
+    align-items: center;
+    color: #33bd61;
+    font-weight: 600;
+}
+.top-rated img{
+    margin-right: .3rem;
+}
+
+.avatar{
+    border-radius: 5rem;
+    margin-right: 1rem;
+}
+.location{
+    margin-right: .3rem;
+}
+
+.activity{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+.activity h3{
+    color: #7930d8;
+    font-size: 1.5rem;
+}
+
+.button{
+    background-color: #7930d8;
+    border: none;
+    width: 100%;
+    padding: .7rem 0rem;
+    color: white;
+    font-size: 600;
+    font-size: 1rem;
+    border-radius: .5rem;
+    margin: 1rem 0rem;
+}
+
+.button2{
+    color: #7930d8;
+    font-size: 0.8rem;
+    border: none;
+    background: none;
+}
+.sidebar-botom{
+    margin-top: 2rem;
+    border-radius: 1rem;
+    text-align: center;
+    padding: 2rem;
+    background-color: #fdf2f8;
+}
+.sidebar-botom img{
+    width: 100%;
+}
